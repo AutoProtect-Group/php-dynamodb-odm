@@ -1,18 +1,17 @@
 # AWS Dynamodb ODM for PHP
 This is a module to use AWS Dynamo DB SDK in a more convenient way.
 
-## Installation
+## Local dev environment installation
 
-Run 
-
+1. Copy file [.env.local.sample](.env.local.sample) into [.env.local](.env.local) and set up the variable according to your OS
+2. In order to build a dev image, please, run: 
 ```bash
 docker-compose build
 ```
-to build a docker image.
-
-Then run `docker-compose run --no-deps dynamo-db-adapter composer install` to install dependencies.
-
-Optionally you may want to set up local env for development. You just need to create a new file ``.env.local`` from  `.env.local.sample` and then set up the vars according to your OS.
+3. Then run to install dependencies: 
+```bash
+docker-compose run --no-deps dynamo-db-adapter composer install
+```
 
 ## Running tests
 
