@@ -32,7 +32,7 @@ jobs:
       - name: Run PHP Spec
         uses: isbang/compose-action@v1.4.1
         with:
-          compose-file: "./docker-compose.yml"
+#          compose-file: "./docker-compose.yml"
           compose-flags: "run --no-deps dynamodb-odm vendor/bin/phpspec run"
           services: |
             helloworld2
