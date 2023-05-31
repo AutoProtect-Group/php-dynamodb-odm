@@ -33,4 +33,5 @@ jobs:
         uses: php-actions/phpspec@master
         with:
           config: phpspec.yml
+          php_version: 8.1
 
