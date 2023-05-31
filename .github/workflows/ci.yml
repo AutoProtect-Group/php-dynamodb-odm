@@ -29,14 +29,11 @@ jobs:
           path: src/
           standard: PSR2
 
-      - name: Build image for tests run
+      - name: Build image for subsequent tests
         run: docker-compose build
 
-      - name: Run Unit tests
+      - name: Run unit tests
         run: docker-compose run --no-deps dynamodb-odm vendor/bin/phpspec run
 
-#      - name: Run PHP Spec
-#        uses: isbang/compose-action@v1.4.1
-#        with:
-##          compose-file: "./docker-compose.yml"
-#          compose-flags: "run --no-deps dynamodb-odm vendor/bin/phpspec run"
+      - name: Run functional tests
+        run: docker-compose run dynamodb-odm vendor/bin/behat -c behat.yml --stop-on-failure
