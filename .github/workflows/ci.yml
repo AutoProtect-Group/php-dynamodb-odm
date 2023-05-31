@@ -29,9 +29,11 @@ jobs:
           path: src/
           standard: PSR2
 
-      - name: PHP spec
-        uses: php-actions/phpspec@master
+      - name: Run PHP Spec
+        uses: isbang/compose-action@v1.4.1
         with:
-          config: phpspec.yml
-          php_version: 8.1
-
+          compose-file: "./docker-compose.yml"
+          compose-flags: "run --no-deps dynamo-db-adapter vendor/bin/phpspec run"
+          services: |
+            helloworld2
+            helloworld3
