@@ -1,0 +1,7 @@
+formatter.name: pretty
+verbose: true
+suites:
+  default:
+    namespace: Autoprotect\DynamodbODM
+    psr4_prefix: Autoprotect\DynamodbODM
+    spec_prefix: spec
