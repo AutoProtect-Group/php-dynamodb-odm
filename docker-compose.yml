@@ -1,7 +1,9 @@
-version: "3"
+version: "3.8"
 services:
   dynamodb-odm:
-    image: dynamodb-odm:dev
+    extends:
+      service: dynamodb-odm
+      file: docker-compose.ci.yml
     build:
       context: .
       dockerfile: Dockerfile
@@ -19,8 +21,14 @@ services:
 
   dynamodb-local:
     command: "-jar DynamoDBLocal.jar -sharedDb -dbPath ./data"
-    image: "amazon/dynamodb-local:1.21.0"
-    container_name: dynamodb-local
+    extends:
+      service: dynamodb-local
+      file: docker-compose.ci.yml
     volumes:
       - "./docker/dynamodb:/home/dynamodblocal/data"
-    working_dir: /home/dynamodblocal
+    ports:
+      - "8011:8000"
+
+networks:
+  default:
+    name: dynamodb-odm-common

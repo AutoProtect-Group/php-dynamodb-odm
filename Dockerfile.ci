@@ -1,0 +1,21 @@
+FROM composer:2.5.5 as composerDocker
+
+FROM php:8.1.14-cli-buster
+
+WORKDIR /application
+
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt update && \
+    apt install -y git && \
+    apt install -y zip unzip libzip-dev && \
+    docker-php-ext-configure zip --with-zip && \
+    docker-php-ext-install zip bcmath
+
+COPY --from=composerDocker /usr/bin/composer /usr/bin/composer
+
+COPY . /application
+
+ARG COMPOSER_AUTH
+
+RUN composer install --prefer-dist

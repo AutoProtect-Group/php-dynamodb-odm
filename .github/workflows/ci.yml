@@ -30,10 +30,10 @@ jobs:
           standard: PSR2
 
       - name: Build image for subsequent tests
-        run: docker-compose build
+        run: docker-compose -f docker-compose.ci.yml build
 
       - name: Run unit tests
-        run: docker-compose run --no-deps dynamodb-odm vendor/bin/phpspec run
+        run: docker-compose -f docker-compose.ci.yml run --no-deps dynamodb-odm vendor/bin/phpspec run
 
       - name: Run functional tests
-        run: docker-compose run dynamodb-odm vendor/bin/behat -c behat.yml --stop-on-failure
+        run: docker-compose -f docker-compose.ci.yml run dynamodb-odm vendor/bin/behat -c behat.yml --stop-on-failure
