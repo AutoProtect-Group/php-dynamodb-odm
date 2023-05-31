@@ -34,6 +34,3 @@ jobs:
         with:
 #          compose-file: "./docker-compose.yml"
           compose-flags: "run --no-deps dynamodb-odm vendor/bin/phpspec run"
-          services: |
-            helloworld2
-            helloworld3
