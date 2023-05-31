@@ -29,8 +29,14 @@ jobs:
           path: src/
           standard: PSR2
 
-      - name: Run PHP Spec
-        uses: isbang/compose-action@v1.4.1
-        with:
-#          compose-file: "./docker-compose.yml"
-          compose-flags: "run --no-deps dynamodb-odm vendor/bin/phpspec run"
+      - name: Build image for tests run
+        run: docker-compose build
+
+      - name: Run Unit tests
+        run: docker-compose run --no-deps dynamodb-odm vendor/bin/phpspec run
+
+#      - name: Run PHP Spec
+#        uses: isbang/compose-action@v1.4.1
+#        with:
+##          compose-file: "./docker-compose.yml"
+#          compose-flags: "run --no-deps dynamodb-odm vendor/bin/phpspec run"
