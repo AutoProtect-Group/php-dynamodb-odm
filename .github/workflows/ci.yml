@@ -27,6 +27,6 @@ jobs:
         with:
           php_version: 8.1
           path: src/
-          standard: PSR12
+          standard: PSR2
 
 
