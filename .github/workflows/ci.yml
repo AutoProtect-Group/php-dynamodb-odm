@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  symfony-tests:
+  tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,4 +29,8 @@ jobs:
           path: src/
           standard: PSR2
 
+      - name: PHP spec
+        uses: php-actions/phpspec@master
+        with:
+          config: phpspec.yml
 
