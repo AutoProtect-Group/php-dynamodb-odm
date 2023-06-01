@@ -1,0 +1,86 @@
+{
+  "eventType": "PAYMENT_INTENT_SUCCEEDED",
+  "eventBody": {
+    "id": "evt_3K6F86J78nLIZgWn0cJC2uI6",
+    "object": "event",
+    "api_version": "2020-08-27",
+    "created": 1639404230,
+    "data": {
+      "object": {
+        "id": "pi_3KGgfEJ78nLIZgWn18KhcG3n",
+        "object": "payment_intent",
+        "amount": 2000,
+        "amount_capturable": 0,
+        "amount_received": 0,
+        "application": null,
+        "application_fee_amount": null,
+        "automatic_payment_methods": null,
+        "canceled_at": null,
+        "cancellation_reason": null,
+        "capture_method": "automatic",
+        "charges": {
+          "object": "list",
+          "data": [],
+          "has_more": false,
+          "total_count": 0,
+          "url": "\/v1\/charges?payment_intent=pi_3K6F86J78nLIZgWn0VlbQ3vO"
+        },
+        "client_secret": "pi_3K6F86J78nLIZgWn0VlbQ3vO_secret_fu1CD8SLrN6Yfx8nYaT9jLCue",
+        "confirmation_method": "automatic",
+        "created": 1639404230,
+        "currency": "usd",
+        "customer": null,
+        "description": "(created by Stripe CLI)",
+        "invoice": null,
+        "last_payment_error": null,
+        "livemode": false,
+        "metadata": [],
+        "next_action": null,
+        "on_behalf_of": null,
+        "payment_method": null,
+        "payment_method_options": {
+          "card": {
+            "installments": null,
+            "network": null,
+            "request_three_d_secure": "automatic"
+          }
+        },
+        "payment_method_types": [
+          "card"
+        ],
+        "receipt_email": null,
+        "review": null,
+        "setup_future_usage": null,
+        "shipping": {
+          "address": {
+            "city": "San Francisco",
+            "country": "US",
+            "line1": "510 Townsend St",
+            "line2": null,
+            "postal_code": "94103",
+            "state": "CA"
+          },
+          "carrier": null,
+          "name": "Jenny Rosen",
+          "phone": null,
+          "tracking_number": null
+        },
+        "source": null,
+        "statement_descriptor": null,
+        "statement_descriptor_suffix": null,
+        "status": "requires_payment_method",
+        "transfer_data": null,
+        "transfer_group": null
+      }
+    },
+    "livemode": false,
+    "pending_webhooks": 2,
+    "request": {
+      "id": "req_PgGxqc5BqX8rrd",
+      "idempotency_key": "9748e5ea-2d6d-4a55-a7f4-660095194d01"
+    },
+    "type": "payment_intent.succeeded"
+  },
+  "createdAt": "2022-01-11T13:57:40+00:00",
+  "updatedAt": "2022-01-11T13:57:40+00:00"
+}

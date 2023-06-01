@@ -1,0 +1,8 @@
+/vendor/
+.idea
+logs/xdebug.log
+.envrc
+.env.local
+composer.lock
+.composer/**
+docker/dynamodb/**

@@ -1,0 +1,47 @@
+name: Code style, unit and functional tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  code-style:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Composer install
+        uses: php-actions/composer@v6
+        with:
+          php_version: 8.1
+          php_extensions: bcmath
+
+      - name: PHP Code Sniffer
+        uses: php-actions/phpcs@v1
+        with:
+          php_version: 8.1
+          path: src/
+          standard: PSR2
+
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build image for subsequent tests
+        run: docker-compose -f docker-compose.ci.yml build
+
+      - name: Run unit tests
+        run: docker-compose -f docker-compose.ci.yml run --no-deps dynamodb-odm vendor/bin/phpspec run
+
+      - name: Run functional tests
+        run: docker-compose -f docker-compose.ci.yml run dynamodb-odm vendor/bin/behat -c behat.yml --stop-on-failure

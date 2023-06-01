@@ -1,0 +1,32 @@
+version: "3.8"
+services:
+  dynamodb-odm:
+    extends:
+      service: dynamodb-odm
+      file: docker-compose.ci.yml
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - AWS_ACCESS_KEY_ID=1
+      - AWS_SECRET_ACCESS_KEY=1
+      - AWS_SESSION_TOKEN=1
+      - DYNAMODB_ENDPOINT_URL=http://dynamodb-local:8000
+    volumes:
+      - .:/application
+    depends_on:
+      - dynamodb-local
+    links:
+      - dynamodb-local
+
+  dynamodb-local:
+    command: "-jar DynamoDBLocal.jar -sharedDb -dbPath ./data"
+    extends:
+      service: dynamodb-local
+      file: docker-compose.ci.yml
+    volumes:
+      - "./docker/dynamodb:/home/dynamodblocal/data"
+
+networks:
+  default:
+    name: dynamodb-odm-common

@@ -1,0 +1,9 @@
+default:
+  formatters:
+    progress: true
+
+  suites:
+    default:
+      contexts:
+        - 'RepositoryContext'
+        - 'QueryBuilderContext'

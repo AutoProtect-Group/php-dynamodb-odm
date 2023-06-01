@@ -1,0 +1,57 @@
+{
+    "name": "autoprotect-group/dynamo-db-adapter",
+    "description": "PHP Object Document Mapper for AWS DynamoDB",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Andrey Semikov",
+            "email": "andrew.semikov@gmail.com",
+            "homepage": "https://github.com/gep"
+        },
+        {
+            "name": "Kiryl Krasouski",
+            "email": "kiryl.krasouski@dealtrak.co.uk"
+        },
+        {
+            "name": "Artur Drabinka",
+            "email": "artur.drabinka@dealtrak.co.uk"
+        },
+        {
+            "name": "Siarhei Karavai",
+            "email": "sergey.karavay@gmail.com",
+            "homepage": "https://github.com/GinoPane"
+        },
+        {
+            "name": "Denis Grinko",
+            "email": "ut.scorpion2@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "aws/aws-sdk-php": "^3.218",
+        "doctrine/annotations": "^1.13",
+        "adbario/php-dot-notation": "^3.1",
+        "ext-bcmath": "*",
+        "moneyphp/money": "^4.0"
+    },
+    "require-dev": {
+        "koriym/attributes": "^1.0",
+        "squizlabs/php_codesniffer": "^3.6",
+        "behat/behat": "^3.10",
+        "phpspec/phpspec": "^7.2",
+        "phpspec/prophecy": "^1.15",
+        "defuse/php-encryption": "^2.3",
+        "phpunit/phpunit": "^9.5",
+        "henzeb/enumhancer": "^1.11"
+    },
+    "autoload": {
+      "psr-4": {
+        "Autoprotect\\DynamodbODM\\": "src/"
+      }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "spec\\Autoprotect\\DynamodbODM\\": "spec/"
+        }
+    }
+}
