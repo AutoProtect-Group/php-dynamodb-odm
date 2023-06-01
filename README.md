@@ -26,7 +26,9 @@ docker-compose run --no-deps dynamodb-odm composer install
 This package uses phpspec for running unit tests.
 
 Run them using the following way:
-`docker-compose run --no-deps dynamodb-odm vendor/bin/phpspec run`
+```bash
+docker-compose run --no-deps dynamodb-odm vendor/bin/phpspec run
+```
 
 One can use environment variables in the `.env.local` file to be able to debug the library. For this just Copy file [.env.local.sample](.env.local.sample) into [.env.local](.env.local) and set up the variable according to your OS.
 
@@ -42,9 +44,13 @@ This package uses behat for running functional tests.
  
 Then just run the tests:
  
-`docker-compose run dynamodb-odm vendor/bin/behat -c behat.yml --stop-on-failure`
+```bash
+docker-compose run dynamodb-odm vendor/bin/behat -c behat.yml --stop-on-failure
+```
 
 ### Syntax check tests
 
 You need to check if the code style is OK by running:
-`docker-compose run --no-deps dynamodb-odm vendor/bin/phpcs  --basepath=/application/src  --standard=PSR2 src`
+```bash
+docker-compose run --no-deps dynamodb-odm vendor/bin/phpcs  --basepath=/application/src  --standard=PSR2 src
+```

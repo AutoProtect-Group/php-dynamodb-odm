@@ -26,8 +26,6 @@ services:
       file: docker-compose.ci.yml
     volumes:
       - "./docker/dynamodb:/home/dynamodblocal/data"
-    ports:
-      - "8011:8000"
 
 networks:
   default:

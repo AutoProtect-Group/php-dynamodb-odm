@@ -18,4 +18,4 @@ COPY . /application
 
 ARG COMPOSER_AUTH
 
-RUN composer install --prefer-dist
+RUN composer install --prefer-dist --no-plugins --no-scripts
