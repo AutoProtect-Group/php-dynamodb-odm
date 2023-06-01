@@ -7,7 +7,7 @@ use Autoprotect\DynamodbODM\Exception\DynamoDbAdapterException;
 /**
  * Class EntityNotFoundException
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Repository\Exception
+ * @package Autoprotect\DynamodbODM\Repository\Exception
  */
 class NothingFoundException extends DynamoDbAdapterException
 {

@@ -291,7 +291,7 @@ class RepositoryContext implements Context
      * @Then /^using projection expressions I should see following items from database:$/
      * @param TableNode $table
      *
-     * @throws \DealTrak\Adapter\DynamoDBAdapter\Repository\Exception\EntityNotFoundException
+     * @throws \Autoprotect\DynamodbODM\Repository\Exception\EntityNotFoundException
      */
     public function usingProjectionExpressionsIShouldSeeFollowingItemsFromDatabase(TableNode $table)
     {

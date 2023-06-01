@@ -5,7 +5,7 @@ namespace Autoprotect\DynamodbODM\Annotation\Types;
 /**
  * Interface ModelTypeInterface
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Annotation\Types
+ * @package Autoprotect\DynamodbODM\Annotation\Types
  */
 interface ModelTypeInterface
 {

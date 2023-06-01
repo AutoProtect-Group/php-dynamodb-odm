@@ -7,7 +7,7 @@ use Closure;
 /***
  * Class ExpressionCollection
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\Expression
+ * @package Autoprotect\DynamodbODM\Query\Expression
  */
 class ExpressionCollection implements ExpressionInterface
 {

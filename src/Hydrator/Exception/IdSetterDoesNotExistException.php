@@ -10,7 +10,7 @@ use Throwable;
 /**
  * Class IdSetterDoesNotExistException
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Hydrator\Exception
+ * @package Autoprotect\DynamodbODM\Hydrator\Exception
  */
 class IdSetterDoesNotExistException extends DynamoDbAdapterException
 {

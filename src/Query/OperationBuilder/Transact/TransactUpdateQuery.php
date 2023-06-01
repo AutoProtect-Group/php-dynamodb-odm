@@ -9,7 +9,7 @@ use ReflectionException;
 /**
  * Class TransactUpdateQuery
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\OperationBuilder\Params
+ * @package Autoprotect\DynamodbODM\Query\OperationBuilder\Params
  */
 class TransactUpdateQuery extends AbstractTransactQuery
 {

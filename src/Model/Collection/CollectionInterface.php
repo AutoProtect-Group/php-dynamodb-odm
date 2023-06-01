@@ -8,7 +8,7 @@ use Autoprotect\DynamodbODM\Model\ModelInterface;
 /**
  * Interface CollectionInterface
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Model\Collection
+ * @package Autoprotect\DynamodbODM\Model\Collection
  */
 interface CollectionInterface extends \IteratorAggregate
 {

@@ -8,7 +8,7 @@ use Autoprotect\DynamodbODM\Query\Exception\ExpressionNotFoundException;
 /**
  * Class RemoveDocumentAttribute
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Repository\DocumentRepository\DocumentOperation
+ * @package Autoprotect\DynamodbODM\Repository\DocumentRepository\DocumentOperation
  */
 class RemoveDocument extends UpdateDocument
 {

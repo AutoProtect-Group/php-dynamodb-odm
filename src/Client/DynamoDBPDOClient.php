@@ -9,7 +9,7 @@ use GuzzleHttp\Promise\PromiseInterface;
 /**
  * Class DynamoDBPDOClient
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Client
+ * @package Autoprotect\DynamodbODM\Client
  */
 class DynamoDBPDOClient implements PDOClientInterface
 {

@@ -13,7 +13,7 @@ use ReflectionException;
 
 /**
  * Class RemoveItemAttributeBuilder
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\OperationBuilder
+ * @package Autoprotect\DynamodbODM\Query\OperationBuilder
  */
 class RemoveItemAttributeBuilder extends ItemOperationBuilder
 {

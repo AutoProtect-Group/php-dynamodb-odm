@@ -8,7 +8,7 @@ use Autoprotect\DynamodbODM\Repository\Exception\EntityNotFoundException;
 /**
  * Class UpdateDocumentCollection
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Repository\DocumentRepository\DocumentOperation
+ * @package Autoprotect\DynamodbODM\Repository\DocumentRepository\DocumentOperation
  */
 class UpdateDocumentCollection extends AbstractAttributeOperation
 {

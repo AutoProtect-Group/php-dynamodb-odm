@@ -8,7 +8,7 @@ use Autoprotect\DynamodbODM\Model\Exception\PropertyGetterIsNotFound;
 /**
  * Class Model
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Model
+ * @package Autoprotect\DynamodbODM\Model
  */
 class Model implements ModelInterface
 {

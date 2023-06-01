@@ -5,7 +5,7 @@ namespace Autoprotect\DynamodbODM\Query\Expression;
 /**
  * Interface ExpressionInterface
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\Expression
+ * @package Autoprotect\DynamodbODM\Query\Expression
  */
 interface ExpressionInterface
 {

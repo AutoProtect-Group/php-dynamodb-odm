@@ -8,7 +8,7 @@ use Autoprotect\DynamodbODM\Annotation\Property\PropertyInterface;
 /**
  * Interface ModelAnnotationProcessorInterface
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Annotation
+ * @package Autoprotect\DynamodbODM\Annotation
  */
 interface ModelAnnotationProcessorInterface
 {

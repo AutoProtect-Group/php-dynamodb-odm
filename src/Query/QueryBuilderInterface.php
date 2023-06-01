@@ -5,7 +5,7 @@ namespace Autoprotect\DynamodbODM\Query;
 /**
  * Interface QueryBuilderInterface
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query
+ * @package Autoprotect\DynamodbODM\Query
  */
 interface QueryBuilderInterface
 {

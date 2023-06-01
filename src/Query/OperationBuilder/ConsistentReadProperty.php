@@ -8,7 +8,7 @@ namespace Autoprotect\DynamodbODM\Query\OperationBuilder;
  *
  * @property bool $consistentRead
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\OperationBuilder
+ * @package Autoprotect\DynamodbODM\Query\OperationBuilder
  */
 trait ConsistentReadProperty
 {

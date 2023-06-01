@@ -44,7 +44,7 @@ use Autoprotect\DynamodbODM\Hydrator\Exception\PropertySetterMethodDoesNotExistE
 /**
  * Class Hydrator
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Hydrator
+ * @package Autoprotect\DynamodbODM\Hydrator
  */
 abstract class AbstractHydrator implements HydratorInterface
 {

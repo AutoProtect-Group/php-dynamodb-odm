@@ -8,7 +8,7 @@ use GuzzleHttp\Promise\PromiseInterface;
 /**
  * Interface RepositoryInterface
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Repository
+ * @package Autoprotect\DynamodbODM\Repository
  */
 interface RepositoryInterface
 {

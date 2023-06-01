@@ -5,7 +5,7 @@ namespace Autoprotect\DynamodbODM\Query\Expression;
 /**
  * Class ProjectionExpression
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\Expression\
+ * @package Autoprotect\DynamodbODM\Query\Expression\
  */
 class ProjectionExpression extends AbstractExpression
 {

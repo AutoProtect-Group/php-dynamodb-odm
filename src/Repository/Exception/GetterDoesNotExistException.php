@@ -7,7 +7,7 @@ use Autoprotect\DynamodbODM\Exception\DynamoDbAdapterException;
 /**
  * Class GetterDoesNotExist
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Repository\Exception
+ * @package Autoprotect\DynamodbODM\Repository\Exception
  */
 class GetterDoesNotExistException extends DynamoDbAdapterException
 {

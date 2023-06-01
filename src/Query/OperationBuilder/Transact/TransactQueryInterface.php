@@ -5,7 +5,7 @@ namespace Autoprotect\DynamodbODM\Query\OperationBuilder\Transact;
 /**
  * Interface TransactUpdateQuery
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\OperationBuilder\Params
+ * @package Autoprotect\DynamodbODM\Query\OperationBuilder\Params
  */
 interface TransactQueryInterface
 {

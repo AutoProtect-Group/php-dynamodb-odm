@@ -6,7 +6,7 @@ namespace Autoprotect\DynamodbODM\Query\Expression;
 /**
  * Class SetExpressionCollection
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\Expression
+ * @package Autoprotect\DynamodbODM\Query\Expression
  */
 class SetExpressionCollection extends ExpressionCollection
 {

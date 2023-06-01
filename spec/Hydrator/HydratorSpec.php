@@ -31,7 +31,7 @@ use ValueError;
 /**
  * Class HydratorSpec
  *
- * @package spec\DealTrak\Adapter\DynamoDBAdapter\Hydrator
+ * @package spec\Autoprotect\DynamodbODM\Hydrator
  */
 class HydratorSpec extends ObjectBehavior
 {

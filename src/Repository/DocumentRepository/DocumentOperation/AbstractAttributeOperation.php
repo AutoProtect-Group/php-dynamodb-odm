@@ -9,7 +9,7 @@ use Autoprotect\DynamodbODM\Repository\DynamoDBRepository;
 /**
  * Class AbstractAttributeOperation
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Repository\DocumentRepository\DocumentOperation
+ * @package Autoprotect\DynamodbODM\Repository\DocumentRepository\DocumentOperation
  */
 abstract class AbstractAttributeOperation implements AttributeOperationInterface
 {

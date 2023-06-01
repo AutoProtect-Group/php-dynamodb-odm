@@ -24,7 +24,7 @@ use Prophecy\Argument;
 /**
  * Class DynamoDBRepositorySpec
  *
- * @package spec\DealTrak\Adapter\DynamoDBAdapter\Repository
+ * @package spec\Autoprotect\DynamodbODM\Repository
  */
 class DynamoDBRepositorySpec extends ObjectBehavior
 {

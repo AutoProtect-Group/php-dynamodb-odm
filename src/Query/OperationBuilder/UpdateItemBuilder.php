@@ -18,7 +18,7 @@ use ReflectionException;
 /**
  * Class UpdateItem
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\OperationBuilder
+ * @package Autoprotect\DynamodbODM\Query\OperationBuilder
  */
 class UpdateItemBuilder extends ItemOperationBuilder
 {

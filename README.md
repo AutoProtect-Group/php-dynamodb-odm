@@ -2,7 +2,11 @@
 
 ![Code style, unit and functional tests](https://github.com/AutoProtect-Group/php-dynamodb-odm/actions/workflows/ci.yml/badge.svg)
 
-This is a module to use AWS Dynamo DB SDK in a more convenient way.
+This is a library and an Object Document Mapper to use with AWS DynamoDB in a more convenient way.
+
+## Usage
+
+To be added soon...
 
 ## Local dev environment installation
 

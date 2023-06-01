@@ -7,7 +7,7 @@ use Autoprotect\DynamodbODM\Query\Expression\ExpressionInterface;
 /**
  * Interface ExpressionFactoryInterface
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\Factory
+ * @package Autoprotect\DynamodbODM\Query\Factory
  */
 interface ExpressionFactoryInterface
 {

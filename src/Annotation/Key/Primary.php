@@ -8,7 +8,7 @@ use Attribute;
 /**
  * Class Primary
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Annotation\Key
+ * @package Autoprotect\DynamodbODM\Annotation\Key
  *
  * @Annotation
  *

@@ -7,7 +7,7 @@ use Aws\DynamoDb\Marshaler;
 /**
  * Class AbstractExpression
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\Expression
+ * @package Autoprotect\DynamodbODM\Query\Expression
  */
 abstract class AbstractExpression implements ExpressionInterface
 {

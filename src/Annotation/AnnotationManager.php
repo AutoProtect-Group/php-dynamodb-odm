@@ -9,7 +9,7 @@ use Doctrine\Common\Annotations\Reader;
 /**
  * Class AnnotationManager
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Annotation
+ * @package Autoprotect\DynamodbODM\Annotation
  */
 class AnnotationManager implements AnnotationManagerInterface
 {

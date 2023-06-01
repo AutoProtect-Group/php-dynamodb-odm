@@ -14,7 +14,7 @@ use Autoprotect\DynamodbODM\Query\Factory\ExpressionFactoryInterface;
 /**
  * Class ScanQueryBuilder
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\OperationBuilder
+ * @package Autoprotect\DynamodbODM\Query\OperationBuilder
  */
 class ScanQueryBuilder extends AbstractQueryBuilder
 {

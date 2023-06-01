@@ -10,7 +10,7 @@ use Traversable;
 /**
  * Class Collection
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Model
+ * @package Autoprotect\DynamodbODM\Model
  */
 class ModelCollection implements CollectionInterface
 {

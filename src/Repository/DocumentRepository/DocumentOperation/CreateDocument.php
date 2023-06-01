@@ -7,7 +7,7 @@ use Autoprotect\DynamodbODM\Model\ModelInterface;
 /**
  * Class CreateDocument
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Repository\DocumentRepository\DocumentOperation
+ * @package Autoprotect\DynamodbODM\Repository\DocumentRepository\DocumentOperation
  */
 class CreateDocument extends AbstractAttributeOperation
 {

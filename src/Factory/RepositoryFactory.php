@@ -26,7 +26,7 @@ use Autoprotect\DynamodbODM\Repository\DynamoDBRepository;
 /**
  * Class RepositoryFactory
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Factory
+ * @package Autoprotect\DynamodbODM\Factory
  */
 class RepositoryFactory implements RepositoryFactoryInterface
 {

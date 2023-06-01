@@ -7,7 +7,7 @@ use InvalidArgumentException;
 /**
  * Class AbstractTransactQuery
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\OperationBuilder\Params
+ * @package Autoprotect\DynamodbODM\Query\OperationBuilder\Params
  */
 abstract class AbstractTransactQuery implements TransactQueryInterface
 {

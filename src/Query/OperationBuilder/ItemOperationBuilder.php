@@ -8,7 +8,7 @@ use Aws\DynamoDb\Marshaler;
 /**
  * Class CommonItemOperationBuilder
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\OperationBuilder
+ * @package Autoprotect\DynamodbODM\Query\OperationBuilder
  */
 class ItemOperationBuilder extends AbstractQueryBuilder
 {

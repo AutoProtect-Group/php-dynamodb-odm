@@ -31,7 +31,7 @@ use ReflectionType;
 /**
  * Class AbstractSerializer
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Model\Serializer
+ * @package Autoprotect\DynamodbODM\Model\Serializer
  */
 abstract class AbstractSerializer implements SerializerInterface
 {

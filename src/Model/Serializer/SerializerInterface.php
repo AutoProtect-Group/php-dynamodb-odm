@@ -8,7 +8,7 @@ use Autoprotect\DynamodbODM\Model\ModelInterface;
 /**
  * Interface SerializerInterface
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Model\Serializer
+ * @package Autoprotect\DynamodbODM\Model\Serializer
  */
 interface SerializerInterface
 {

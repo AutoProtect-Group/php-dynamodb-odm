@@ -11,7 +11,7 @@ use Autoprotect\DynamodbODM\Model\ModelInterface;
 /**
  * Class Hydrator
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Hydrator
+ * @package Autoprotect\DynamodbODM\Hydrator
  */
 class Hydrator extends AbstractHydrator
 {

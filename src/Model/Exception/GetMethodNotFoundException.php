@@ -8,7 +8,7 @@ use Throwable;
 /**
  * Class GetMethodNotFoundException
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Model\Exception
+ * @package Autoprotect\DynamodbODM\Model\Exception
  */
 class GetMethodNotFoundException extends DynamoDbAdapterException
 {

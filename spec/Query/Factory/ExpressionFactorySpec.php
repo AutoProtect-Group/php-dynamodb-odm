@@ -11,7 +11,7 @@ use PhpSpec\ObjectBehavior;
 /**
  * Class ExpressionFactorySpec
  *
- * @package spec\DealTrak\Adapter\DynamoDBAdapter\Query\Factory
+ * @package spec\Autoprotect\DynamodbODM\Query\Factory
  */
 class ExpressionFactorySpec extends ObjectBehavior
 {

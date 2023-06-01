@@ -15,7 +15,7 @@ use Autoprotect\DynamodbODM\Repository\DynamoDBRepository;
 /**
  * Class DocumentRepository
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Repository\DocumentRepository
+ * @package Autoprotect\DynamodbODM\Repository\DocumentRepository
  */
 class DocumentRepository extends DynamoDBRepository
 {

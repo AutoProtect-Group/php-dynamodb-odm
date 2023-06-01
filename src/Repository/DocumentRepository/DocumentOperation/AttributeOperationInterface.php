@@ -5,7 +5,7 @@ namespace Autoprotect\DynamodbODM\Repository\DocumentRepository\DocumentOperatio
 /**
  * Interface AttributeOperationInterface
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Repository\DocumentRepository\DocumentOperation
+ * @package Autoprotect\DynamodbODM\Repository\DocumentRepository\DocumentOperation
  */
 interface AttributeOperationInterface
 {

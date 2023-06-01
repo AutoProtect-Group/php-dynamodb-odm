@@ -8,7 +8,7 @@ use Autoprotect\DynamodbODM\Annotation\Key;
 /**
  * Class Quotation
  *
- * @package spec\DealTrak\Adapter\DynamoDBAdapter\Repository\fixtures
+ * @package spec\Autoprotect\DynamodbODM\Repository\fixtures
  */
 final class Quotation extends Model
 {

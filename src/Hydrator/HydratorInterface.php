@@ -7,7 +7,7 @@ use Autoprotect\DynamodbODM\Model\ModelInterface;
 /**
  * Interface HydratorInterface
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Hydrator
+ * @package Autoprotect\DynamodbODM\Hydrator
  */
 interface HydratorInterface
 {

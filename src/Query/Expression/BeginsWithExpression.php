@@ -5,7 +5,7 @@ namespace Autoprotect\DynamodbODM\Query\Expression;
 /**
  * Class BeginsWithExpression
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\Expression
+ * @package Autoprotect\DynamodbODM\Query\Expression
  */
 class BeginsWithExpression extends ScalarArgExpression
 {

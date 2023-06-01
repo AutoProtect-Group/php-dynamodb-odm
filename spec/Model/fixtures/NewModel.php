@@ -122,7 +122,7 @@ class NewModel extends Model
     }
 
     /**
-     * @param \spec\DealTrak\Adapter\DynamoDBAdapter\Model\fixtures\Asset $asset
+     * @param \spec\Autoprotect\DynamodbODM\Model\fixtures\Asset $asset
      *
      * @return NewModel
      */

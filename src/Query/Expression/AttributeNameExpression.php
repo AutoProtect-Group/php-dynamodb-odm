@@ -5,7 +5,7 @@ namespace Autoprotect\DynamodbODM\Query\Expression;
 /**
  * Class AttributeNameExpression
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\Expression
+ * @package Autoprotect\DynamodbODM\Query\Expression
  */
 class AttributeNameExpression extends ScalarArgExpression
 {

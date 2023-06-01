@@ -7,7 +7,7 @@ use Attribute;
 /**
  * Class MoneyType
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Annotation\Types
+ * @package Autoprotect\DynamodbODM\Annotation\Types
  *
  * @Annotation
  *

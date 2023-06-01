@@ -7,7 +7,7 @@ use Autoprotect\DynamodbODM\Model\ModelInterface;
 /**
  * Class HashMap
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Model\Collection
+ * @package Autoprotect\DynamodbODM\Model\Collection
  */
 class HashMap extends ModelCollection
 {

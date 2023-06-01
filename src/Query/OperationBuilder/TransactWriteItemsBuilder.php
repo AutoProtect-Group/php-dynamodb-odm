@@ -8,7 +8,7 @@ use Autoprotect\DynamodbODM\Query\OperationBuilder\Transact\TransactQueryInterfa
 /**
  * Class TransactWriteItemsBuilder
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\OperationBuilder
+ * @package Autoprotect\DynamodbODM\Query\OperationBuilder
  */
 class TransactWriteItemsBuilder extends AbstractQueryBuilder
 {

@@ -19,7 +19,7 @@ use GuzzleHttp\Promise\PromiseInterface;
 /**
  * Class CommonRepository
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Repository
+ * @package Autoprotect\DynamodbODM\Repository
  */
 abstract class AbstractRepository implements RepositoryInterface
 {

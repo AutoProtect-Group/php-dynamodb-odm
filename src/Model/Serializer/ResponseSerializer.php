@@ -19,7 +19,7 @@ use Autoprotect\DynamodbODM\Annotation\Types\Money;
 /**
  * Class ResponseSerializer
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Model\Serializer
+ * @package Autoprotect\DynamodbODM\Model\Serializer
  */
 class ResponseSerializer extends Serializer
 {

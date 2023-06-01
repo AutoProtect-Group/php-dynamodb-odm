@@ -10,7 +10,7 @@ use Throwable;
 /**
  * Class PrimaryKeyException
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Hydrator\Exception
+ * @package Autoprotect\DynamodbODM\Hydrator\Exception
  */
 class PrimaryKeyException extends DynamoDbAdapterException
 {

@@ -10,7 +10,7 @@ use Throwable;
 /**
  * Class PropertySetterMethodDoesNotExistException
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Hydrator\Exception
+ * @package Autoprotect\DynamodbODM\Hydrator\Exception
  */
 class PropertySetterMethodDoesNotExistException extends DynamoDbAdapterException
 {

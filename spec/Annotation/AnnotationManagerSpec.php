@@ -10,7 +10,7 @@ use spec\Autoprotect\DynamodbODM\Model\fixtures\SortKeyModel;
 /**
  * Class AnnotationManagerSpec
  *
- * @package spec\DealTrak\Adapter\DynamoDBAdapter\Annotation
+ * @package spec\Autoprotect\DynamodbODM\Annotation
  */
 class AnnotationManagerSpec extends AbstractAnnotationSpec
 {

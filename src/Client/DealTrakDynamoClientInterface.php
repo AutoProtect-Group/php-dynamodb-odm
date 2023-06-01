@@ -5,7 +5,7 @@ namespace Autoprotect\DynamodbODM\Client;
 /**
  * Interface DealTrakDynamoClientInterface
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Client
+ * @package Autoprotect\DynamodbODM\Client
  */
 interface DealTrakDynamoClientInterface
 {

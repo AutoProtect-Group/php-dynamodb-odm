@@ -7,7 +7,7 @@ use Autoprotect\DynamodbODM\Repository\DynamoDBRepository;
 /**
  * Interface RepositoryManagerInterface
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Factory
+ * @package Autoprotect\DynamodbODM\Factory
  */
 interface RepositoryFactoryInterface
 {

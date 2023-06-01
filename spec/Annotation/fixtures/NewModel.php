@@ -9,7 +9,7 @@ use Autoprotect\DynamodbODM\Annotation\Types;
 /**
  * Class NewModel
  *
- * @package spec\DealTrak\Adapter\DynamoDBAdapter\Annotation\fixtures
+ * @package spec\Autoprotect\DynamodbODM\Annotation\fixtures
  */
 class NewModel extends Model
 {

@@ -7,7 +7,7 @@ use Autoprotect\DynamodbODM\Query\AbstractQueryBuilder;
 /**
  * Class BatchWriteItemBuilder
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\OperationBuilder
+ * @package Autoprotect\DynamodbODM\Query\OperationBuilder
  */
 class BatchWriteItemBuilder extends AbstractQueryBuilder
 {

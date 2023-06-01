@@ -4,11 +4,6 @@ namespace Autoprotect\DynamodbODM\Query\Expression;
 
 use Aws\DynamoDb\Marshaler;
 
-/**
- * Class ScalarArgExpression
- *
- * @package DealTrak\src\Query\Expression
- */
 abstract class ScalarArgExpression extends AbstractExpression
 {
     /**

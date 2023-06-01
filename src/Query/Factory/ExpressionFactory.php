@@ -10,7 +10,7 @@ use Autoprotect\DynamodbODM\Query\Expression\ExpressionInterface;
 /**
  * Class ExpressionFactory
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\Factory
+ * @package Autoprotect\DynamodbODM\Query\Factory
  */
 class ExpressionFactory implements ExpressionFactoryInterface
 {

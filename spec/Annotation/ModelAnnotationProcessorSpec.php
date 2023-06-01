@@ -19,7 +19,7 @@ use spec\Autoprotect\DynamodbODM\Model\fixtures\SortKeyModel;
 /**
  * Class ModelAnnotationProcessorSpec
  *
- * @package spec\DealTrak\Adapter\DynamoDBAdapter\Annotation
+ * @package spec\Autoprotect\DynamodbODM\Annotation
  */
 class ModelAnnotationProcessorSpec extends AbstractAnnotationSpec
 {

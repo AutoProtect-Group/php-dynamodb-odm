@@ -7,7 +7,7 @@ use Aws\DynamoDb\Marshaler;
 /**
  * Class QueryBuilder
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query
+ * @package Autoprotect\DynamodbODM\Query
  */
 abstract class AbstractQueryBuilder implements QueryBuilderInterface
 {

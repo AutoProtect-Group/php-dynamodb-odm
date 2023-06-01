@@ -8,7 +8,7 @@ use Closure;
 /**
  * Class ProjectionExpressionCollection
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\Expression
+ * @package Autoprotect\DynamodbODM\Query\Expression
  */
 class ProjectionExpressionCollection extends ExpressionCollection
 {

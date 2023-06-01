@@ -26,7 +26,7 @@ use ReflectionProperty;
 /**
  * Class ModelAnnotationProcessor
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Annotation
+ * @package Autoprotect\DynamodbODM\Annotation
  */
 class ModelAnnotationProcessor implements ModelAnnotationProcessorInterface
 {

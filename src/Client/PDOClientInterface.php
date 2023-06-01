@@ -7,7 +7,7 @@ use GuzzleHttp\Promise\PromiseInterface;
 /**
  * Interface PDOClientInterface
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Client
+ * @package Autoprotect\DynamodbODM\Client
  */
 interface PDOClientInterface
 {

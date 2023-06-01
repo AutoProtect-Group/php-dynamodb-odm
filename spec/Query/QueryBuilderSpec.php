@@ -23,7 +23,7 @@ use Autoprotect\DynamodbODM\Query\Expression\Condition\AttributeNotExistsExpress
 /**
  * Class QueryBuilderSpec
  *
- * @package spec\DealTrak\Adapter\DynamoDBAdapter\Query
+ * @package spec\Autoprotect\DynamodbODM\Query
  */
 class QueryBuilderSpec extends ObjectBehavior
 {

@@ -5,7 +5,7 @@ namespace Autoprotect\DynamodbODM\Query\Exception;
 /**
  * Class ExpressionNotFoundException
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\Exception
+ * @package Autoprotect\DynamodbODM\Query\Exception
  */
 class ExpressionNotFoundException extends QueryBuilderException
 {

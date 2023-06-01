@@ -5,7 +5,7 @@ namespace Autoprotect\DynamodbODM\Query\Exception;
 /**
  * Class QueryBuilderException
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\Exception
+ * @package Autoprotect\DynamodbODM\Query\Exception
  */
 class QueryBuilderException extends \Exception
 {

@@ -7,7 +7,7 @@ use Autoprotect\DynamodbODM\Annotation\Property\PropertyInterface;
 /**
  * Interface AnnotationManagerInterface
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Annotation
+ * @package Autoprotect\DynamodbODM\Annotation
  */
 interface AnnotationManagerInterface
 {

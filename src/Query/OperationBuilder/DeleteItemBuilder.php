@@ -5,7 +5,7 @@ namespace Autoprotect\DynamodbODM\Query\OperationBuilder;
 /**
  * Class DeleteItemBuilder
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\OperationBuilder
+ * @package Autoprotect\DynamodbODM\Query\OperationBuilder
  */
 class DeleteItemBuilder extends ItemOperationBuilder
 {

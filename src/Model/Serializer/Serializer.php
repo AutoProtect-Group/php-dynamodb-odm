@@ -11,7 +11,7 @@ use InvalidArgumentException;
 /**
  * Class Serializer
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Model\Serializer
+ * @package Autoprotect\DynamodbODM\Model\Serializer
  */
 class Serializer extends AbstractSerializer
 {

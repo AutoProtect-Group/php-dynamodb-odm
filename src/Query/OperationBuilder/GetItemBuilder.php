@@ -13,7 +13,7 @@ use Autoprotect\DynamodbODM\Query\Factory\ExpressionFactoryInterface;
 /**
  * Class GetItemBuilder
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\OperationBuilder
+ * @package Autoprotect\DynamodbODM\Query\OperationBuilder
  */
 class GetItemBuilder extends ItemOperationBuilder
 {

@@ -9,7 +9,7 @@ use PhpSpec\ObjectBehavior;
 /**
  * Class UpdateItemBuilderSpec
  *
- * @package spec\DealTrak\Adapter\DynamoDBAdapter\Query\OperationBuilder
+ * @package spec\Autoprotect\DynamodbODM\Query\OperationBuilder
  */
 class UpdateItemBuilderSpec extends ObjectBehavior
 {

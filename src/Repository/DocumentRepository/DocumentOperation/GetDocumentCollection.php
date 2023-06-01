@@ -9,7 +9,7 @@ use Autoprotect\DynamodbODM\Repository\Exception\EntityNotFoundException;
 /**
  * Class GetDocumentCollection
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Repository\DocumentRepository\DocumentOperation
+ * @package Autoprotect\DynamodbODM\Repository\DocumentRepository\DocumentOperation
  */
 class GetDocumentCollection extends AbstractAttributeOperation
 {

@@ -8,7 +8,7 @@ use Doctrine\Common\Annotations\Annotation;
 /**
  * Class IntegerType
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Annotation\Types
+ * @package Autoprotect\DynamodbODM\Annotation\Types
  *
  * @Annotation
  *

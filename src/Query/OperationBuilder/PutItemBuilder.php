@@ -13,7 +13,7 @@ use ReflectionException;
 /**
  * Class PutItemBuilder
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\Operation
+ * @package Autoprotect\DynamodbODM\Query\Operation
  */
 class PutItemBuilder extends ItemOperationBuilder
 {

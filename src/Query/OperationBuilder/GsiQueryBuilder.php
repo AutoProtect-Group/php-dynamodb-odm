@@ -10,7 +10,7 @@ use Autoprotect\DynamodbODM\Query\Factory\ExpressionFactoryInterface;
  *
  * Builds query using global secondary index (GSI) for data retrieval
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Query\OperationBuilder
+ * @package Autoprotect\DynamodbODM\Query\OperationBuilder
  */
 class GsiQueryBuilder extends QueryQueryBuilder
 {

@@ -10,7 +10,7 @@ use Exception;
 /**
  * Class GetDocumentAttribute
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Repository\DocumentRepository\DocumentOperation
+ * @package Autoprotect\DynamodbODM\Repository\DocumentRepository\DocumentOperation
  */
 class GetDocument extends AbstractGetOperation
 {

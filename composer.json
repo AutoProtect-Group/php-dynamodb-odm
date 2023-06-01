@@ -5,7 +5,8 @@
     "authors": [
         {
             "name": "Andrey Semikov",
-            "email": "andrey.semikov@dealtrak.co.uk"
+            "email": "andrew.semikov@gmail.com",
+            "homepage": "https://github.com/gep"
         },
         {
             "name": "Kiryl Krasouski",
@@ -14,10 +15,19 @@
         {
             "name": "Artur Drabinka",
             "email": "artur.drabinka@dealtrak.co.uk"
+        },
+        {
+            "name": "Siarhei Karavai",
+            "email": "sergey.karavay@gmail.com",
+            "homepage": "https://github.com/GinoPane"
+        },
+        {
+            "name": "Denis Grinko",
+            "email": "ut.scorpion2@gmail.com"
         }
     ],
     "require": {
-        "php": ">=8.1",
+        "php": "^8.1",
         "aws/aws-sdk-php": "^3.218",
         "doctrine/annotations": "^1.13",
         "adbario/php-dot-notation": "^3.1",

@@ -7,7 +7,7 @@ use Autoprotect\DynamodbODM\Annotation\Types;
 /**
  * Trait SoftDeleteModelTrait
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Model\ModelTrait
+ * @package Autoprotect\DynamodbODM\Model\ModelTrait
  */
 trait SoftDeleteModelTrait
 {

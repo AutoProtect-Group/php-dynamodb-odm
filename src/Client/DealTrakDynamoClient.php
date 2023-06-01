@@ -5,7 +5,7 @@ namespace Autoprotect\DynamodbODM\Client;
 /**
  * Class DealTrakDynamoClient
  *
- * @package DealTrak\Adapter\DynamoDBAdapter\Client
+ * @package Autoprotect\DynamodbODM\Client
  */
 class DealTrakDynamoClient extends DynamoDBPDOClient implements DealTrakDynamoClientInterface
 {
