@@ -17,7 +17,7 @@ use Autoprotect\DynamodbODM\Query\QueryBuilder;
 use Autoprotect\DynamodbODM\Query\QueryBuilderInterface;
 use Autoprotect\DynamodbODM\Repository\DynamoDBRepository;
 use Autoprotect\DynamodbODM\Repository\Exception\EntityNotFoundException;
-use Autoprotect\DynamodbODM\Client\DealTrakDynamoClient;
+use Autoprotect\DynamodbODM\Client\DynamodbOperationsClient;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -37,7 +37,7 @@ class DynamoDBRepositorySpec extends ObjectBehavior
 
     public function let(
         Hydrator $hydrator,
-        DealTrakDynamoClient $client,
+        DynamodbOperationsClient $client,
         QueryBuilder $queryBuilder,
         Marshaler $marshaler,
         SerializerInterface $serializer
@@ -63,7 +63,7 @@ class DynamoDBRepositorySpec extends ObjectBehavior
 
     public function it_saves_the_model(
         QueryBuilder $queryBuilder,
-        DealTrakDynamoClient $client,
+        DynamodbOperationsClient $client,
         PutItemBuilder $putItem,
         SerializerInterface $serializer
     ) {
@@ -113,7 +113,7 @@ class DynamoDBRepositorySpec extends ObjectBehavior
 
     public function it_deletes_the_model(
         QueryBuilder $queryBuilder,
-        DealTrakDynamoClient $client,
+        DynamodbOperationsClient $client,
         AnnotationManager $annotationManager,
         DeleteItemBuilder $deleteItem,
         PropertyInterface $idProperty,
@@ -189,7 +189,7 @@ class DynamoDBRepositorySpec extends ObjectBehavior
 
     public function it_gets_the_model(
         QueryBuilder $queryBuilder,
-        DealTrakDynamoClient $client,
+        DynamodbOperationsClient $client,
         Hydrator $hydrator,
         Marshaler $marshaler,
         GetItemBuilder $getItem,
@@ -272,7 +272,7 @@ class DynamoDBRepositorySpec extends ObjectBehavior
         $this->get($fakeModel->getId())->shouldBe($fakeModel);
     }
 
-    public function it_cannot_get_the_model(QueryBuilderInterface $criteria, DealTrakDynamoClient $client)
+    public function it_cannot_get_the_model(QueryBuilderInterface $criteria, DynamodbOperationsClient $client)
     {
         $fakeModel = $this->getModel();
         $fakeGetQuery = [
@@ -292,7 +292,7 @@ class DynamoDBRepositorySpec extends ObjectBehavior
 
     public function it_gets_all_models(
         QueryBuilder $queryBuilder,
-        DealTrakDynamoClient $client,
+        DynamodbOperationsClient $client,
         Hydrator $hydrator,
         ScanQueryBuilder $scan
     ) {
@@ -351,7 +351,7 @@ class DynamoDBRepositorySpec extends ObjectBehavior
 
     public function it_gets_few_models(
         QueryBuilder $queryBuilder,
-        DealTrakDynamoClient $client,
+        DynamodbOperationsClient $client,
         Hydrator $hydrator,
         ScanQueryBuilder $scan
     ) {
@@ -414,7 +414,7 @@ class DynamoDBRepositorySpec extends ObjectBehavior
 
     public function it_can_update_the_model(
         QueryBuilder $queryBuilder,
-        DealTrakDynamoClient $client,
+        DynamodbOperationsClient $client,
         Hydrator $hydrator,
         UpdateItemBuilder $updateItem,
         AnnotationManager $annotationManager,

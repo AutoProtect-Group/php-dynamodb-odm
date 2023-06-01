@@ -18,7 +18,7 @@ use Autoprotect\DynamodbODM\Query\QueryBuilder;
 use Autoprotect\DynamodbODM\Query\QueryBuilderInterface;
 use Autoprotect\DynamodbODM\Repository\Exception\ConditionFailedException;
 use Autoprotect\DynamodbODM\Repository\Exception\EntityNotFoundException;
-use Autoprotect\DynamodbODM\Client\DealTrakDynamoClient;
+use Autoprotect\DynamodbODM\Client\DynamodbOperationsClient;
 use Autoprotect\DynamodbODM\Repository\Exception\GetterDoesNotExistException;
 use Autoprotect\DynamodbODM\Repository\Exception\NothingFoundException;
 use Exception;
@@ -26,11 +26,6 @@ use GuzzleHttp\Promise\PromiseInterface;
 use ReflectionException;
 use Autoprotect\DynamodbODM\Query\Expression\Condition\AttributeNotExistsExpression;
 
-/**
- * Class DynamoDBRepository
- *
- * @package DealTrak\Repository
- */
 class DynamoDBRepository extends AbstractRepository
 {
     protected ?int $limit = null;
@@ -47,7 +42,7 @@ class DynamoDBRepository extends AbstractRepository
      */
     public function __construct(
         string $modelClassName,
-        DealTrakDynamoClient $client,
+        DynamodbOperationsClient $client,
         QueryBuilder $queryBuilder,
         Hydrator $hydrator,
         AnnotationManager $annotationManager,
@@ -82,7 +77,7 @@ class DynamoDBRepository extends AbstractRepository
     }
 
     /**
-     * @return DealTrakDynamoClient
+     * @return DynamodbOperationsClient
      */
     public function getClient(): PDOClientInterface
     {

@@ -7,7 +7,7 @@ use Aws\DynamoDb\Marshaler;
 use Behat\Behat\Context\Context;
 use Behat\Gherkin\Node\TableNode;
 use Autoprotect\DynamodbODM\Annotation\AnnotationManager;
-use Autoprotect\DynamodbODM\Client\DealTrakDynamoClient;
+use Autoprotect\DynamodbODM\Client\DynamodbOperationsClient;
 use Autoprotect\DynamodbODM\Hydrator\Hydrator;
 use Autoprotect\DynamodbODM\Model\Serializer\Serializer;
 use Autoprotect\DynamodbODM\Query\Factory\ExpressionFactory;
@@ -59,7 +59,7 @@ class RepositoryContext implements Context
                 ? ['endpoint' => getenv('DYNAMODB_ENDPOINT_URL', true)]
                 : []
         ));
-        $client = new DealTrakDynamoClient($this->dynamoDbClient);
+        $client = new DynamodbOperationsClient($this->dynamoDbClient);
         $marshaler = new Marshaler();
         $this->queryBuilder = new QueryBuilder($marshaler, new ExpressionFactory($marshaler));
         $annotationReader = new AnnotationReader();

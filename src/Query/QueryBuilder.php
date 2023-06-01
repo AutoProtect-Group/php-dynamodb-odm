@@ -16,11 +16,6 @@ use Autoprotect\DynamodbODM\Query\OperationBuilder\TransactWriteItemsBuilder;
 use Autoprotect\DynamodbODM\Query\OperationBuilder\UpdateItemBuilder;
 use ReflectionException;
 
-/**
- * Class QueryBuilder
- *
- * @package DealTrak\Query
- */
 class QueryBuilder extends AbstractQueryBuilder
 {
     protected ExpressionFactoryInterface $expressionFactory;

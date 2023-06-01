@@ -2,12 +2,7 @@
 
 namespace Autoprotect\DynamodbODM\Client;
 
-/**
- * Interface DealTrakDynamoClientInterface
- *
- * @package Autoprotect\DynamodbODM\Client
- */
-interface DealTrakDynamoClientInterface
+interface DynamodbOperationsClientInterface
 {
     /**
      * Batch write item

@@ -4,7 +4,7 @@ namespace Autoprotect\DynamodbODM\Factory;
 
 use Aws\DynamoDb\Marshaler;
 use Autoprotect\DynamodbODM\Annotation\AnnotationManager;
-use Autoprotect\DynamodbODM\Client\DealTrakDynamoClient;
+use Autoprotect\DynamodbODM\Client\DynamodbOperationsClient;
 use Autoprotect\DynamodbODM\Hydrator\TypeHydrator\Date\DateTypeHydratorInterface;
 use Autoprotect\DynamodbODM\Hydrator\TypeHydrator\Enum\EnumTypeHydratorInterface;
 use Autoprotect\DynamodbODM\Hydrator\TypeHydrator\Float\FloatTypeHydratorInterface;
@@ -31,7 +31,7 @@ use Autoprotect\DynamodbODM\Repository\DynamoDBRepository;
 class RepositoryFactory implements RepositoryFactoryInterface
 {
     public function __construct(
-        protected DealTrakDynamoClient $dealTrakDynamoClient,
+        protected DynamodbOperationsClient $dynamodbOperationsClient,
         protected AnnotationManager $annotationManager,
         protected Serializer $serializer,
         protected ?Marshaler $marshaler = null,
@@ -79,7 +79,7 @@ class RepositoryFactory implements RepositoryFactoryInterface
 
         return new DocumentRepository(
             $modelClassName,
-            $this->dealTrakDynamoClient,
+            $this->dynamodbOperationsClient,
             $this->queryBuilder,
             $hydrator,
             $this->annotationManager,
@@ -122,7 +122,7 @@ class RepositoryFactory implements RepositoryFactoryInterface
         if (class_exists($repositoryClassName)) {
             return new $repositoryClassName(
                 $modelClassName,
-                $this->dealTrakDynamoClient,
+                $this->dynamodbOperationsClient,
                 $this->queryBuilder,
                 $hydrator,
                 $this->annotationManager,
@@ -144,7 +144,7 @@ class RepositoryFactory implements RepositoryFactoryInterface
     {
         return new class(
             $modelClassName,
-            $this->dealTrakDynamoClient,
+            $this->dynamodbOperationsClient,
             $this->queryBuilder,
             $hydrator,
             $this->annotationManager,
@@ -156,7 +156,7 @@ class RepositoryFactory implements RepositoryFactoryInterface
              */
             public function __construct(
                 string $modelClassName,
-                DealTrakDynamoClient $client,
+                DynamodbOperationsClient $client,
                 QueryBuilder $queryBuilder,
                 Hydrator $hydrator,
                 AnnotationManager $annotationManager,
