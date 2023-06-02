@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Repository\DocumentRepository;
 
 use Autoprotect\DynamodbODM\Repository\DocumentRepository\DocumentOperation\CreateDocument;

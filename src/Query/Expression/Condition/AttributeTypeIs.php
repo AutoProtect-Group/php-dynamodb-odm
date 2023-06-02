@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Query\Expression\Condition;
 
 use Autoprotect\DynamodbODM\Query\Expression\AttributeValueExpression;

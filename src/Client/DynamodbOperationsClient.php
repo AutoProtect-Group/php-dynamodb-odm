@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Client;
 
 class DynamodbOperationsClient extends DynamoDBPDOClient implements DynamodbOperationsClientInterface

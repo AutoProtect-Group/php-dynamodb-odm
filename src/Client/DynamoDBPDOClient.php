@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Client;
 
 use Aws\DynamoDb\DynamoDbClient as DynamoDbClientSDK;

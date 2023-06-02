@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Repository;
 
 use Autoprotect\DynamodbODM\Annotation\Exception\NoPropertyFoundException;

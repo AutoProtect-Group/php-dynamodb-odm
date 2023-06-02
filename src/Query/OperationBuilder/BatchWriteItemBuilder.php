@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Query\OperationBuilder;
 
 use Autoprotect\DynamodbODM\Query\AbstractQueryBuilder;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Model\Collection;
 
 use Autoprotect\DynamodbODM\Model\ModelInterface;

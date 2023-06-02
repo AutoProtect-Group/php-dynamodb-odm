@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Repository\Exception;
 
 use Autoprotect\DynamodbODM\Exception\DynamoDbAdapterException;

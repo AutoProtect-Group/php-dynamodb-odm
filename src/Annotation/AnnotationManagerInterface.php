@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Annotation;
 
 use Autoprotect\DynamodbODM\Annotation\Property\PropertyInterface;
