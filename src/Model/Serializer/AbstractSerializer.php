@@ -157,7 +157,7 @@ abstract class AbstractSerializer implements SerializerInterface
                 },
                 []
             ),
-            MoneyType::TYPE_NAME => (int) round(bcmul((string)$value, '100.0', 1)),
+            MoneyType::TYPE_NAME => (int) round((float)bcmul((string)$value, '100.0', 1)),
             Money::TYPE_NAME => $value->jsonSerialize(),
             DateType::TYPE_NAME => $value->format(DateTimeInterface::ATOM),
             IntegerType::TYPE_NAME => (int) $value,
