@@ -10,7 +10,6 @@ use Exception;
 
 class DateTypeHydrator implements DateTypeHydratorInterface
 {
-
     public function hydrate(string $value): DateTimeInterface
     {
         try {

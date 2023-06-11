@@ -103,7 +103,7 @@ class GetDocumentCollection extends AbstractAttributeOperation
     protected function hydrateCollection(array $items): CollectionInterface
     {
         /** @var CollectionInterface $collection **/
-        $collection = new $this->collectionType;
+        $collection = new $this->collectionType();
 
         foreach ($items as $modelData) {
             /** @var ModelInterface $model **/

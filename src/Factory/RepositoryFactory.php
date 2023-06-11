@@ -144,7 +144,7 @@ class RepositoryFactory implements RepositoryFactoryInterface
      */
     private function createAnonymousRepository(string $modelClassName, Hydrator $hydrator): DynamoDBRepository
     {
-        return new class(
+        return new class (
             $modelClassName,
             $this->dynamodbOperationsClient,
             $this->queryBuilder,

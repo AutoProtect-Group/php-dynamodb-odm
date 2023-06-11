@@ -8,7 +8,6 @@ use Autoprotect\DynamodbODM\Hydrator\HydratorInterface;
 
 interface HashMapTypeHydratorInterface
 {
-
     public function hydrate(
         string $modelClassName,
         HydratorInterface $hydrator,

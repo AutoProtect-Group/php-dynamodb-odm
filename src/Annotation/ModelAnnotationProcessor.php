@@ -97,9 +97,11 @@ class ModelAnnotationProcessor implements ModelAnnotationProcessorInterface
             return;
         }
 
-        foreach ($this->getParentClassPrivateProperties(
-            $refClass->getParentClass()->getName()
-        ) as $parentProperty) {
+        foreach (
+            $this->getParentClassPrivateProperties(
+                $refClass->getParentClass()->getName()
+            ) as $parentProperty
+        ) {
             $annotationProperty = $this->buildAnnotationProperty($parentProperty);
 
             if (!is_null($annotationProperty)) {

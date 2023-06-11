@@ -11,7 +11,6 @@ namespace Autoprotect\DynamodbODM\Query\Expression;
  */
 class ProjectionExpression extends AbstractExpression
 {
-
     public const DEFAULT_OPERATOR = '';
 
     /**

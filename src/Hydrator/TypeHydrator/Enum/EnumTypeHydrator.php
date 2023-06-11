@@ -78,7 +78,7 @@ class EnumTypeHydrator implements EnumTypeHydratorInterface
         if (!$reflectionType instanceof ReflectionNamedType) {
             throw new PropertyShouldBeOfNamedTypeException(
                 sprintf(
-                    'Property %s should be ReflectionNamedType, '.
+                    'Property %s should be ReflectionNamedType, ' .
                     'e. g. should have only enum type in the class %s',
                     $annotationPropertyName,
                     $modelClassName
@@ -86,7 +86,8 @@ class EnumTypeHydrator implements EnumTypeHydratorInterface
             );
         }
         $name = $reflectionType->getName();
-        if (!$reflectionType->allowsNull()
+        if (
+            !$reflectionType->allowsNull()
             &&
             !(
                 (

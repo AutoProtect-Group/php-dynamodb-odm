@@ -178,7 +178,7 @@ abstract class AbstractHydrator implements HydratorInterface
     {
         $this->modelClassName = $this->getModelNameUsingParams($data, $discriminatorFieldName);
 
-        return new $this->modelClassName;
+        return new $this->modelClassName();
     }
 
     /**
