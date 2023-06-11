@@ -6,10 +6,6 @@ WORKDIR /application
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get install -y ca-certificates
-COPY ./docker/ssl.crt /usr/local/share/ca-certificates/ssl.crt
-RUN update-ca-certificates
-
 RUN apt update && \
     apt install -y git && \
     apt install -y zip unzip libzip-dev && \
