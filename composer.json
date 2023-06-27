@@ -2,6 +2,7 @@
     "name": "autoprotect-group/php-dynamodb-odm",
     "description": "PHP Object Document Mapper for AWS DynamoDB",
     "type": "library",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Andrey Semikov",
