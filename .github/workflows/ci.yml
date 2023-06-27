@@ -27,8 +27,7 @@ jobs:
         uses: php-actions/phpcs@v1
         with:
           php_version: 8.1
-          path: src/
-          standard: PSR2
+          standard: phpcs.xml
 
   tests:
     runs-on: ubuntu-latest

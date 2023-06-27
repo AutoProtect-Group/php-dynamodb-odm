@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Query\Expression;
 
 /**
@@ -9,7 +11,6 @@ namespace Autoprotect\DynamodbODM\Query\Expression;
  */
 class ProjectionExpression extends AbstractExpression
 {
-
     public const DEFAULT_OPERATOR = '';
 
     /**

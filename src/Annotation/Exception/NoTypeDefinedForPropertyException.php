@@ -8,5 +8,4 @@ use Autoprotect\DynamodbODM\Exception\DynamoDbAdapterException;
 
 class NoTypeDefinedForPropertyException extends DynamoDbAdapterException
 {
-
 }

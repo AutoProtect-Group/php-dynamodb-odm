@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Hydrator;
 
 use DateTime;
@@ -176,7 +178,7 @@ abstract class AbstractHydrator implements HydratorInterface
     {
         $this->modelClassName = $this->getModelNameUsingParams($data, $discriminatorFieldName);
 
-        return new $this->modelClassName;
+        return new $this->modelClassName();
     }
 
     /**

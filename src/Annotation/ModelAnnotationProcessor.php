@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Annotation;
 
 use Autoprotect\DynamodbODM\Annotation\Encryption\EncryptedPropertyInterface;
@@ -95,9 +97,11 @@ class ModelAnnotationProcessor implements ModelAnnotationProcessorInterface
             return;
         }
 
-        foreach ($this->getParentClassPrivateProperties(
-            $refClass->getParentClass()->getName()
-        ) as $parentProperty) {
+        foreach (
+            $this->getParentClassPrivateProperties(
+                $refClass->getParentClass()->getName()
+            ) as $parentProperty
+        ) {
             $annotationProperty = $this->buildAnnotationProperty($parentProperty);
 
             if (!is_null($annotationProperty)) {

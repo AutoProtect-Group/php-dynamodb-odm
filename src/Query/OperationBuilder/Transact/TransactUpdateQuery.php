@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Query\OperationBuilder\Transact;
 
 use Autoprotect\DynamodbODM\Query\Exception\ExpressionNotFoundException;

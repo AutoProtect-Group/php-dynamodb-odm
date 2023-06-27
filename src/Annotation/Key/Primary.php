@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Annotation\Key;
 
 use Doctrine\Common\Annotations\Annotation;
@@ -19,5 +21,4 @@ use Attribute;
 #[Attribute(Attribute::TARGET_PROPERTY)]
 class Primary
 {
-
 }

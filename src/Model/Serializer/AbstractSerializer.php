@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Model\Serializer;
 
 use DateTimeInterface;
@@ -155,7 +157,7 @@ abstract class AbstractSerializer implements SerializerInterface
                 },
                 []
             ),
-            MoneyType::TYPE_NAME => (int) round(bcmul($value, 100.0, 1), 0),
+            MoneyType::TYPE_NAME => (int) round((float) bcmul((string) $value, '100.0', 1)),
             Money::TYPE_NAME => $value->jsonSerialize(),
             DateType::TYPE_NAME => $value->format(DateTimeInterface::ATOM),
             IntegerType::TYPE_NAME => (int) $value,

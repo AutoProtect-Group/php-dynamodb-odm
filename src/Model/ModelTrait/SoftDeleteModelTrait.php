@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Model\ModelTrait;
 
 use Autoprotect\DynamodbODM\Annotation\Types;

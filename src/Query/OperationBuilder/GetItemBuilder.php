@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Query\OperationBuilder;
 
 use Aws\DynamoDb\Marshaler;

@@ -52,5 +52,5 @@ docker-compose run dynamodb-odm vendor/bin/behat -c behat.yml --stop-on-failure
 
 You need to check if the code style is OK by running:
 ```bash
-docker-compose run --no-deps dynamodb-odm vendor/bin/phpcs  --basepath=/application/src  --standard=PSR2 src
+docker-compose run --no-deps dynamodb-odm vendor/bin/phpcs --standard=/application/phpcs.xml
 ```

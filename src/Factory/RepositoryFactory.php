@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Factory;
 
 use Aws\DynamoDb\Marshaler;
@@ -142,7 +144,7 @@ class RepositoryFactory implements RepositoryFactoryInterface
      */
     private function createAnonymousRepository(string $modelClassName, Hydrator $hydrator): DynamoDBRepository
     {
-        return new class(
+        return new class (
             $modelClassName,
             $this->dynamodbOperationsClient,
             $this->queryBuilder,

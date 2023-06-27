@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Autoprotect\DynamodbODM\Repository;
 
 use Aws\DynamoDb\Marshaler;
@@ -207,7 +209,8 @@ abstract class AbstractRepository implements RepositoryInterface
         $modelKey[$this->annotationManager->getPrimaryKeyByModelClassName($this->modelClassName)]
             = $partitionKey;
 
-        if ($sortKey !== null &&
+        if (
+            $sortKey !== null &&
             $sortKeyName = $this->annotationManager->getSortKeyByModelClassName($this->modelClassName)->getName()
         ) {
             $modelKey[$sortKeyName] = $sortKey;

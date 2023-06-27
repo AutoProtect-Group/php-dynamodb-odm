@@ -47,7 +47,7 @@ final class NewModel extends Model
     /**
      * @var float
      *
-     * @Types\NumberType
+     * @Types\FloatType
      */
     protected float $percent;
 
