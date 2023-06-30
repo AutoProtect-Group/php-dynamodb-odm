@@ -7,6 +7,7 @@ namespace Autoprotect\DynamodbODM\Annotation\Types;
 use Attribute;
 
 /**
+ * @deprecated
  * Class MoneyType
  *
  * @package Autoprotect\DynamodbODM\Annotation\Types
