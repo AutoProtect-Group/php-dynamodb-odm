@@ -228,7 +228,7 @@ $foundModel = $newModelDynamoDbRepository->get($id, $sortKey, false);
 
 ##### Get one item
 ```php
-$foundModel = $newModelDynamoDbRepository->get($id, $sortKey, false);
+$foundModel = $newModelDynamoDbRepository->getOneById($id, $sortKey, false);
 ```
 
 #### Insert model
@@ -284,6 +284,61 @@ $name = $this->documentRepository->getDocumentProperty()
     ->withPrKey($keyValue)
     ->execute()
 ;
+```
+
+#### Get/create/update/delete operations
+
+Document repository supports specific property get/create/update/delete operations:
+
+- `createDocument()`
+- `updateDocument()`
+- `removeDocument()`
+- `getDocumentCollection()`
+- `updateDocumentCollection()`
+- `createDocumentCollection()`
+
+### Query builder
+
+Another powerful feature is query builders. This adds flexibility to fetch items by specific criteria which is supported by DynamoDB.
+
+This is a way to work with the Dynamodb using raw queries and results
+
+#### Get query builder
+
+Fetch items:
+
+```php
+$getItemQuery = $queryBuilder
+    ->getItem(self::DB_TABLE)
+    ->itemKey([$itemKey => $keyValue])
+    ->getQuery();
+    
+$item = $this->dynamoDbClient
+    ->getItem($getItemQuery)->get('Item');
+```
+#### Update query builder
+
+Ability to update specific attributes.
+
+```php
+$attributesForUpdate = [
+   "numberProp" => 2, 
+   "stringProp" => "updated string value", 
+   "hashMapProp.map-id-1.type" => "updated map-type-1", 
+   "hashMapProp.map-id-1.mapProp" => "updated mapProp", 
+   "listProp" => [
+         "updated listProp 1", 
+         "updated listProp 2" 
+      ] 
+]; 
+
+$getItemQuery = $queryBuilder
+    ->updateItem(self::DB_TABLE)
+    ->itemKey([$itemKey => $keyValue])
+    ->attributes($attributesForUpdate)
+    ->getQuery();
+
+$dynamoDbClient->updateItem($getItemQuery);
 ```
 
 ## Local dev environment installation
