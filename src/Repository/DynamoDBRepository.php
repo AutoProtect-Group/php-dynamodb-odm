@@ -291,7 +291,15 @@ class DynamoDBRepository extends AbstractRepository
             );
         }
 
-        return $this->hydrator->hydrate($this->marshaler->unmarshalItem($output[0]));
+        $result = $this->hydrator->hydrate($this->marshaler->unmarshalItem($output[0]));
+
+        if ((is_object($result)) && (method_exists($result, 'hasExpired')) && ($result->hasExpired())) {
+            throw new EntityNotFoundException(
+                sprintf('%s by ID %s has expired', $this->modelClassName, $id)
+            );
+        }
+
+        return $result;
     }
 
     /**
